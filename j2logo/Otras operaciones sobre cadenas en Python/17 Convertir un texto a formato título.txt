@@ -1,0 +1,10 @@
+Para convertir un texto a formato título, utiliza el método title(). title() convierte la primera letra de cada palabra de una cadena a mayúsculas.
+
+>>> hola = 'hola pythonista. ¿te gusta python?'
+>>> hola_title = hola.title()
+
+>>> print(hola)
+hola pythonista. ¿te gusta python?
+
+>>> print(hola_title)
+Hola Pythonista. ¿Te Gusta Python?

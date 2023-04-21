@@ -1,0 +1,93 @@
+"""
+Pero en Python es mucho más simple. Dado que en Python las listas, tuplas, diccionarios, cadenas o conjuntos vacíos se evalúan como False , la forma de comprobar como un auténtico pythonista ?? si una estructura de datos está vacía es la siguiente:
+"""
+
+if list:
+  # No vacía
+else:
+  # Vacía
+
+if dict:
+  # No vacío
+else:
+  # Vacío
+
+"""
+Por tanto, si una estructura de datos está vacía, devuelve «False» cuando es usada en un contexto booleano. Por el contrario, si contiene elementos, devuelve «True» al tratarla en un contexto booleano.
+
+Veámoslo con un ejemplo:
+
+Vamos a definir una función para comprobar si una estructura de datos está vacía:
+"""
+
+def is_empty(data_structure):
+    if data_structure:
+        print("No está vacía")
+        return False
+    else:
+        print("Está vacía")
+        return True
+
+# Ahora vamos a inicializar unas estructuras de datos vacías y vamos a comprobar su estado:
+
+>>>d = {}
+>>>t = ()
+>>>l = []
+>>>str = ''
+>>>s = set()
+
+>>>is_empty(d)
+Está vacía
+>>>is_empty(t)
+Está vacía
+>>>is_empty(l)
+Está vacía
+>>>is_empty(str)
+Está vacía
+>>>is_empty(s)
+Está vacía
+
+# A continuación, añadimos un elemento a cada una de las estructuras anteriores y hacemos la misma comprobación:
+
+>>>d['a'] = 1
+>>>t = tuple('a')
+>>>l.append('a')
+>>>str = 'a'
+>>>s.add('a')
+
+>>>is_empty(d)
+No está vacía
+>>>is_empty(t)
+No está vacía
+>>>is_empty(l)
+No está vacía
+>>>is_empty(str)
+No está vacía
+>>>is_empty(s)
+No está vacía
+
+# Como podemos comprobar, al evaluar en un contexto booleano cada una de las estructuras de datos vemos que no están vacías.
+
+"""
+Cuidado con los None
+??Hay que tener en cuenta que esta forma de comprobar si una estructura de datos (ya sea una lista, diccionario, cadena…) está vacía, también devolverá False si su valor es None.
+
+Además, las claves «vacías» que tienen valores en los diccionarios también serán evaluadas como «no vacías«. Véamoslo:
+"""
+>>> empty_key = {None: 'Hola'}
+>>> is_empty(empty_key)
+No está vacía
+False
+
+"""
+Evita la forma no «pythonica»
+Sí, seguro que te lo has preguntado o lo has pensado. ¿Por qué no hago uso de la función len?
+Puedes hacerlo y no está mal, simplemente no es la forma pythonica preferida por la comunidad.
+"""
+
+if len(dict) == 0:
+  ...
+
+
+if len(dict.keys()) == 0:
+  ...

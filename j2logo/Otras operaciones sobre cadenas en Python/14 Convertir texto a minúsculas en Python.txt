@@ -1,0 +1,10 @@
+Para convertir una cadena a minúsculas, utiliza el método lower(). lower() devuelve una copia de la cadena en minúsculas.
+
+>>> hola = 'HOLA Pythonista'
+>>> hola_lower = hola.lower()
+
+>>> print(hola)
+HOLA Pythonista
+
+>>> print(hola_lower)
+hola pythonista

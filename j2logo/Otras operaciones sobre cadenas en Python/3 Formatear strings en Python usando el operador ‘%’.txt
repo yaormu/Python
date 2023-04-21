@@ -1,0 +1,22 @@
+Formatear strings en Python usando el operador % es el modo tradicional, muy similar a la función printf del lenguaje C.
+
+Básicamente, en la cadena se define un lugar (en el que se especifica un marcador de tipo) que será sustituido posteriormente por un valor:
+
+>>> nombre = 'J2logo'
+>>> 'Hola %s' % nombre
+'Hola J2logo'
+En el ejemplo anterior, el lugar indicado por %s para será sustituido por el string nombre.
+
+Si nos fijamos en el script que mostraba el resultado de una suma de la sección anterior, lo podemos mejorar del siguiente modo:
+
+>>> def print_suma(x, y):
+...     return 'El resultado de %i e %i es: %i' % (x, y, x+y)
+... 
+>>> print_suma(1, 2)
+'El resultado de 1 e 2 es: 3'
+
+
+?? Es importante tener en cuenta que los valores son sustituidos en el mismo orden en que se indican.
+
+i quieres conocer todos los posibles tipos de conversión usando el estilo printf, puedes consultar la documentación oficial de Python:
+https://docs.python.org/3/library/stdtypes.html#old-string-formatting

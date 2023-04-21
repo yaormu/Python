@@ -1,0 +1,54 @@
+"""
+Python existen varias formas de concatenar dos o más objetos de tipo string. La más sencilla es usar el operador +. Concatenar dos o más strings con el operador + da como resultado un nuevo string.
+
+Veámoslo con un ejemplo:
+"""
+
+>>> nombre = 'Juan José'
+>>> apellidos = 'Lozano Gómez'
+>>> nombre_completo = nombre + apellidos
+>>> nombre_completo
+'Juan JoséLozano Gómez'
+
+"""
+Como podemos observar, para concatenar dos cadenas con el operador + simplemente necesitamos dos objetos de tipo string. Estos objetos pueden estar almacenados en memoria (usando una variable como en el ejemplo), ser un literal e incluso ser el valor devuelto por una función.
+"""
+
+>>> saludo = 'Hola '
+>>> hola = saludo + 'J2logo'
+>>> hola
+'Hola J2logo'
+
+"""
+Como he indicado en el párrafo anterior, para concatenar varios strings en Python necesitamos que todos los elementos sean de este tipo. Si tratamos de concatenar, por ejemplo, un string con un int, el intérprete lanzará un error:
+"""
+
+>>> suma = 1 + 2
+>>> suma
+3
+>>> res = 'El resultado de 1 + 2 es: ' + suma
+Traceback (most recent call last):
+  File "<input>", line 1, in <module>
+TypeError: can only concatenate str (not "int") to str
+
+"""
+Para poder concatenar los valores anteriores tienes que convertir suma a un objeto de tipo string. Para ello puedes usar el método str(), que devuelve una representación de tipo string del objeto que se le pasa como parámetro.
+"""
+
+>>> suma = 1 + 2
+>>> suma
+3
+>>> res = 'El resultado de 1 + 2 es: ' + str(suma)
+>>> res
+'El resultado de 1 + 2 es: 3'
+
+# También es posible concatenar más de dos strings a la vez:
+
+>>> print('Suma: ' + str(1) + ' + 2 = ' + str(1 + 2))
+Suma: 1 + 2 = 3
+
+
+"""
+No obstante, los dos últimos ejemplos que te he enseñado no son los más «apropiados». Existen opciones más legibles en Python como te mostraré a continuación.
+"""
+

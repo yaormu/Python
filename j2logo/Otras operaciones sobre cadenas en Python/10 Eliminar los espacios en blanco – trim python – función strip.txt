@@ -1,0 +1,13 @@
+Las operaciones con cadenas son imprescindibles en cualquier lenguaje de programación. Una tarea muy común al trabajar con objetos de tipo string es eliminar los espacios en blanco (conocida como trim python string) al principio y/o final de los mismos, por ejemplo, para limpiar la entrada de datos de un usuario. La función strip() es la solución a tus problemas.
+Imagina que tienes un campo de texto en el que es obligatorio introducir un mínimo de caracteres. En este caso, puedes usar la función strip para eliminar todos los espacios en blanco sobrantes y verificar que el usuario completó correctamente el campo de texto.
+
+Función strip en Python – trim python string
+
+Cualquier objeto de tipo string implementa el método strip(). Este método se utiliza para eliminar todos los espacios en blanco iniciales y finales de una cadena. También tiene en cuenta los tabuladores y saltos de línea. En realidad strip() devuelve una copia de la cadena con los caracteres iniciales y finales en blanco eliminados.
+
+>>> hola = ' \t\t\n\tHola \n '
+>>> print(hola)
+    Hola 
+>>> hola_limpio = hola.strip()
+>>> print(hola_limpio)
+Hola

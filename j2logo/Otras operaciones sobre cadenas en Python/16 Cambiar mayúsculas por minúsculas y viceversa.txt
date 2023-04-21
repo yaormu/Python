@@ -1,0 +1,10 @@
+Para cambiar los caracteres en mayúsculas de un texto por minúsculas y viceversa, utiliza el método swapcase(). swapcase() devuelve una copia de la cadena con los caracteres en mayúsculas cambiados por minúsculas y viceversa.
+
+>>> hola = 'Hola Pythonista. ¿Te gusta Python?'
+>>> hola_swaped = hola.swapcase()
+
+>>> print(hola)
+Hola Pythonista. ¿Te gusta Python?
+
+>>> print(hola_swaped)
+hOLA pYTHONISTA. ¿tE GUSTA pYTHON?

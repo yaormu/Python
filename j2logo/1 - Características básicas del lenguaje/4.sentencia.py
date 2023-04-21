@@ -1,0 +1,1 @@
+a = 2 + 3  # Asigna a la variable <a> el resultado de 2 + 3

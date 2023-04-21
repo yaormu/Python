@@ -1,0 +1,8 @@
+Además del método strip(), también existen los métodos rstrip() y lstrip().
+rstrip() devuelve una nueva cadena con los espacios en blanco del final eliminados. Por el contrario, lstrip() devuelve una nueva cadena sin los espacios en blanco del principio.
+
+>>> hola = ' hola '
+>>> print(hola.rstrip())
+' hola'
+>>> print(hola.lstrip())
+'hola '

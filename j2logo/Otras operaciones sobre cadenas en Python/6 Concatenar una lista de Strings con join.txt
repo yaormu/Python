@@ -1,0 +1,11 @@
+Concatenar una lista de Strings con join
+Por último, si dispones de una lista de strings, puedes hacer uso del método join para concatenar los distintos valores en un único string.
+
+>>> cadenas = ['Hola', 'j2logo', ',', '¿cómo', 'estás?']
+>>> ' '.join(cadenas)
+'Hola j2logo , ¿cómo estás?'
+Como puedes observar, el literal con el que se llama a join es lo que se utiliza para separar los distintos elementos de la cadena.
+
+>>> numeros = ['1', '2', '3']
+>>> ', '.join(numeros)
+'1, 2, 3'

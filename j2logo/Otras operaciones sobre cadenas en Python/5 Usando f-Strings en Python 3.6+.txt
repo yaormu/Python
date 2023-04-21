@@ -1,0 +1,22 @@
+Usando f-Strings en Python 3.6+
+
+A partir de la versión 3.6 de Python, el lenguaje introdujo un nuevo modo de formatear strings que es más eficiente que todos los que hemos visto anteriormente. Son las cadenas literales formateadas o f-Strings.
+
+Esta nueva forma de formatear cadenas, permite embeber expresiones dentro de una constante de tipo string. Por ejemplo:
+
+nombre = 'J2logo'
+f'Hola {nombre}'
+'Hola J2logo'
+
+
+Otro ejemplo:
+
+>>> def print_suma(x, y):
+...     return f'El resultado de {x} + {y} es: {x + y}'
+... 
+>>> print_suma(1, 2)
+
+'El resultado de 1 + 2 es: 3'
+
+
+Como ves, las f-Strings comienzan siempre con el literal f y, aunque su comportamiento pueda parecer muy similar a los métodos vistos previamente, internamente su implementación hace que esta forma sea la más rápida para concatenar cadenas.

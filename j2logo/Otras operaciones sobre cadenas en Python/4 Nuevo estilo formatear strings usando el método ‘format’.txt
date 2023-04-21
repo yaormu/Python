@@ -1,0 +1,20 @@
+Python 3 y posteriormente Python 2.7 introdujeron una nuevo modo de formatear cadenas a través del método format disponible en cualquier objeto de tipo string.
+
+Se puede hacer uso de este método del mismo modo que se hacía con el método tradicional, es decir, sustituyendo valores en función de la posición a través del marcador {}:
+
+>>> var1 = 'J2logo'
+>>> var2 = 'Hola'
+>>> '{} {}, ¿cómo estás?'.format(var2, var1)
+'Hola J2logo, ¿cómo estás?'
+Pero también puedes especificar el nombre de las variables, de manera que el orden en el que se pasen los argumentos al llamar a format no importa:
+
+>>> var1 = 'J2logo'
+>>> var2 = 'Hola'
+>>> '{var2} {var1}, ¿cómo estás?'.format(var1=var1, var2=var2)
+'Hola J2logo, ¿cómo estás?'
+O indicando el índice de los parámetros al invocar al método format:
+
+>>> var1 = 'J2logo'
+>>> var2 = 'Hola'
+>>> '{1} {0}, ¿cómo estás?'.format(var1, var2)
+'Hola J2logo, ¿cómo estás?'

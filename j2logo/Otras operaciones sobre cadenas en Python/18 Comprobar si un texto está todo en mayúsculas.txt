@@ -1,0 +1,7 @@
+Para comprobar si un texto está todo en mayúsculas, utiliza el método isupper(). isupper() devuelve True si todos los caracteres de una cadena están en mayúsculas, False en caso contrario.
+
+>>> 'Hola'.isupper()
+False
+
+>>> 'HOLA'.isupper()
+True

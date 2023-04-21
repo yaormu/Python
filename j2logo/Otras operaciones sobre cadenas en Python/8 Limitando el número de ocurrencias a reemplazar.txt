@@ -1,0 +1,6 @@
+Al método replace() se le puede pasar un tercer parámetro opcional de tipo integer. Este parámetro indica el número máximo de ocurrencias a ser reemplazadas:
+
+>>> aes = 'aaaaaa'
+>>> nueva = aes.replace('a', 'b', 3)
+>>> nueva
+'bbbaaa'

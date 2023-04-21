@@ -1,0 +1,41 @@
+"""
+MÉTODO SPLIT EN PYTHON
+
+El método split(sep=None, maxsplit=-1) en Python devuelve una lista de palabras o tokens usando sep como cadena de separación. Básicamente, se utiliza para dividir o separar un string en partes.
+
+Si no se pasa el argumento sep o este es None, cualquier espacio en blanco será eliminado, incluyendo los del comienzo y fin de la cadena y cualquier carácter que se imprima en blanco, como \n \t o \r:
+"""
+
+>>> '  Me    gusta \t\nPython     '.split()
+['Me', 'gusta', 'Python']
+
+
+# Fíjate que el resultado es diferente si se indica sep=' ':
+
+>>> '  Me    gusta \t\nPython     '.split(' ')
+['', '', 'Me', '', '', '', 'gusta', '\t\nPython', '', '', '', '', '']
+
+# Como te decía, sep puede ser un carácter:
+
+>>> '1,2,3'.split(sep=',')
+['1', '2', '3']
+
+# O una cadena (en este caso, la coma y un espacio):
+
+>>> '1, 2, 3'.split(sep=', ')
+['1', '2', '3']
+
+# Además, si se especifica el argumento sep, los delimitadores que aparezcan juntos no se agrupan. En su lugar, se crea como token una cadena vacía '':
+
+>>> '1,,2,,,3'.split(',')
+['1', '', '2', '', '', '3']
+
+LIMITANDO EL NÚMERO DE DIVISIONES QUE REALIZA SPLIT
+
+Para terminar este minitutorial, veremos que al usar split en Python se puede indicar el número máximo de divisiones a realizar especificando el argumento maxsplit:
+
+>>> 'Me gusta Python'.split(maxsplit=1)
+['Me', 'gusta Python']
+
+>>> '1, 2, 3, 4, 5'.split(sep=', ', maxsplit=2)
+['1', '2', '3, 4, 5']

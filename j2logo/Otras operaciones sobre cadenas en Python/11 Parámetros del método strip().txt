@@ -1,0 +1,9 @@
+Opcionalmente, al método strip() se le puede pasar como parámetro un conjunto de caracteres. Si todos estos caracteres se encuentran al principio o al final de la cadena serán eliminados. Veámoslo con un ejemplo:
+
+>>> texto = ' hola mundo hola \ni'
+>>> print(texto.strip(' oahl'))
+mundo hola 
+i
+
+>>> print(texto.strip(' \nioahl'))
+mund

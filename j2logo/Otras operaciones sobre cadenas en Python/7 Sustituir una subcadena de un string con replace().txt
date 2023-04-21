@@ -1,0 +1,8 @@
+El método replace(sub, nuevo) de la clase string devuelve una copia del string con todas las ocurrencias del substring sub reemplazadas por el substring nuevo.
+
+Veámoslo con un ejemplo:
+
+>>> dir_name = 'S2A_MSIL1C_20190106T105431_N0207_R051_T30SXH_20190106T112304'
+>>> new_dir_name = dir_name.replace('MSIL1C', 'MSIL2A')
+>>> new_dir_name
+'S2A_MSIL2A_20190106T105431_N0207_R051_T30SXH_20190106T112304'

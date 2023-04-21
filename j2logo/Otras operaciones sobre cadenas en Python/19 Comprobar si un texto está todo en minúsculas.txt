@@ -1,0 +1,7 @@
+Para comprobar si un texto está todo en minúsculas, utiliza el método islower(). islower() devuelve True si todos los caracteres de una cadena están en minúsculas, False en caso contrario.
+
+>>> 'Hola'.islower()
+False
+
+>>> 'hola'.islower()
+True

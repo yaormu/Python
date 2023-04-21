@@ -1,0 +1,10 @@
+Para convertir una cadena a mayúsculas, utiliza el método upper(). upper() devuelve una copia de la cadena en mayúsculas.
+
+>>> hola = 'Hola pythonista'
+>>> hola_upper = hola.upper()
+
+>>> print(hola)
+Hola pythonista
+
+>>> print(hola_upper)
+HOLA PYTHONISTA

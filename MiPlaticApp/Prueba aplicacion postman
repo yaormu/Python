@@ -1,0 +1,29 @@
+Probando la Petición: auth_user
+Método: POST
+URL: http://127.0.0.1:8000/user/auth/
+
+Body (JSON): 
+
+{
+"username": "camilo24",
+"password": "root"
+}
+
+
+Probando la Petición: get_balance
+Ingresar la siguiente información que construirá la petición:
+Método: GET
+URL: http://127.0.0.1:8000/user/balance/camilo24
+
+Body (JSON): {}
+
+Probando la Petición: make_transaction
+Método: PUT
+URL: http://127.0.0.1:8000/user/transaction/
+
+Body (JSON): 
+
+{
+"username": "camilo24",
+"value": 200
+}

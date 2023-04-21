@@ -1,0 +1,3 @@
+El método replace() visto en los apartados anteriores se refiere al método perteneciente a objetos de tipo string. No hay que confundirlo con la función replace() del módulo string que, además, fue eliminada en la versión 3 de Python.
+
+Es por esto que al método se le llama del siguiente modo: 'cadena'.replace('c', 'C') y no string.replace('cadena', 'c', 'C').
